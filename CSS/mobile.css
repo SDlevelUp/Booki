@@ -1,0 +1,305 @@
+/***************MOBILE****************/
+
+
+@media screen and (min-width: 376px) and (max-width: 768px) {
+
+
+    body {
+        box-sizing: border-box;
+        margin: 0px;
+    }
+
+    main {
+        margin: 0px;
+    }
+
+    #logo {
+        width: 272px;
+        height: 96px;
+        padding-left: 86px;
+        padding-right: 50px;
+        display: flex;
+        align-items: center;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-bottom: 3px solid #f2f2f2;
+        padding-right: 0%;
+    }
+
+    nav div a:hover {
+        border-top: none;
+        border-bottom: #0065fc 3px solid;
+        padding-bottom: 0px;
+    }
+
+
+    div .haut {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    header {
+        padding-left: 42px;
+        padding-top: 44px;
+        padding: 1px;
+    }
+
+    header h1 {
+        font-size: 23px;
+        font-weight: 700;
+        margin-left: 33px;
+    }
+
+    header p {
+        margin-top: 0px;
+    }
+
+    .nature {
+        font-size: 16px;
+        font-weight: 400;
+        margin-left: 33px;
+    }
+
+    /***************FILTRES****************/
+
+
+    .filtres+p {
+        margin-top: 42px;
+        margin-left: 20px;
+        line-height: 24px;
+    }
+
+    .filtres {
+        display: inline-block;
+        margin-top: 16px;
+        margin-left: -19px;
+    }
+
+    .filtres a {
+        margin-left: 37px;
+        margin-top: 9px;
+    }
+
+    .titre_filtres {
+        margin-left: 43px;
+    }
+
+    .filtres> :first-child,
+    .filtres> :nth-child(2) {
+        margin-top: 22px;
+    }
+
+    .filtres> :first-child,
+    .filtres> :nth-child(2),
+    .filtres> :nth-child(3) {
+        margin-right: 0px;
+    }
+
+    /***************BARRE DDE RECHERCHE + (LOUPE)****************/
+
+    .fa-location-dot {
+        height: 50px;
+        width: 46px;
+        margin: 3px;
+        margin-right: -4px;
+        margin-top: 0px;
+    }
+
+    .fa-magnifying-glass {
+        background-color: #0065fc;
+        color: white;
+        cursor: pointer;
+        border: none;
+        border-radius: 16px;
+        padding: 15px 15px 15px;
+        height: 50px;
+        margin-left: -10px;
+        width: 50px;
+    }
+
+    .search-box {
+        display: contents;
+    }
+
+    .icone_loupe {
+        display: contents;
+        font-size: medium;
+    }
+
+    .recherche {
+        display: none;
+    }
+
+    form {
+        padding-left: 19px;
+    }
+
+    form .search-box input {
+        width: 202px;
+    }
+
+    .search-box input {
+        height: 50px;
+    }
+
+    /***************HEBERGEMENTS****************/
+
+
+    .Hebergements img {
+        object-fit: cover;
+        width: 100%;
+        height: 132px;
+        border-radius: 20px 20px 0 0;
+    }
+
+    .Hebergements .bord_blanc_photo {
+        width: 100%;
+        height: 227px;
+    }
+
+    .description {
+        line-height: 19px;
+        margin-top: -2px;
+        margin-left: 30px;
+    }
+
+    .description p {
+        line-height: 21px;
+    }
+
+    .Hebergements h2 {
+        font-size: 18px;
+        margin-left: -4px;
+    }
+
+    .etoiles_hotel {
+        margin: -20px 1px;
+        font-size: 14px;
+        margin-left: -18px;
+    }
+
+    .Hebergements h4,
+    p {
+        font-size: 16px;
+        margin-left: -18px;
+        margin-top: 10px;
+        line-height: 5px;
+    }
+
+    .AffiPlus a {
+        margin-left: 42px;
+        font-size: 18px;
+        font-weight: bolder;
+        cursor: pointer;
+        color: black;
+        text-decoration: none;
+    }
+
+    /***************POPULAIRES****************/
+
+    .Populaires {
+        width: 122%;
+        border-radius: 0px;
+        margin-left: -33px;
+    }
+
+    .Populaires img {
+        object-fit: cover;
+        width: 44%;
+        height: 134px;
+    }
+
+
+    .Populaires .bord_blanc_popus_organisation {
+        height: 135px;
+        width: 322px;
+        margin-left: 26px;
+    }
+
+    .Populaires .popu_titre {
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 41px;
+        margin-left: 37px;
+    }
+
+    .Populaires .description_popu {
+        width: 188px;
+        margin-left: 9px;
+        line-height: 1px;
+    }
+
+    .Populaires .description_popu p {
+        margin-left: 0px;
+        font-size: 15px;
+    }
+
+    .Populaires .etoiles_hotel {
+        font-size: 14px;
+        margin-top: 21px;
+        margin-left: 0px;
+    }
+
+    .Populaires h4 {
+        line-height: 18px;
+    }
+
+    .nuit {
+        line-height: 27px;
+    }
+
+    /***************ACTIVITES****************/
+
+    .Les_Activites img {
+        height: 148px;
+        width: 337px;
+        object-fit: cover;
+        border-radius: 20px 20px 0 0;
+    }
+
+    .border-activity {
+        border-radius: 20px;
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.062);
+        transition: 0.8s;
+        height: 193px;
+        width: 338px;
+        margin: 10px;
+    }
+
+    .TitreActivite {
+        padding-top: 35px;
+        padding-bottom: 24px;
+        margin-left: 27px;
+    }
+
+    .Les_Activites p {
+        font-size: 16px;
+        color: black;
+        text-align: left;
+        padding: 10px 30px;
+    }
+
+
+    /***************FOOTER****************/
+
+    footer {
+        flex-direction: column;
+        height: 537px;
+    }
+
+    footer section {
+        padding-bottom: 10px;
+    }
+
+    footer a {
+        line-height: 0px;
+    }
+
+    .footer_choix {
+        padding-top: 30px;
+    }
+}

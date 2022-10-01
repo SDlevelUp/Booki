@@ -1,0 +1,495 @@
+*{
+    box-sizing: border-box;
+    font-family: raleway, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main, header{
+    padding: 0 35px;
+}
+
+main 
+{
+    display: flex!important;
+}
+/***************************************** NAV, LOGO ET LIENS ACTIVITES*****************************/
+
+
+#logo 
+{
+    width: 178px;
+    height: 87px;
+    padding-left: 30px;
+    padding-top: 20px;
+}
+
+
+nav div a:hover
+{
+    border-top: #0065fc 3px solid;
+    padding-right: 50px;
+    color: #0065fc;
+    
+}
+
+nav div a
+{
+    text-decoration: none;
+    color: black;
+    padding-left: 70px;
+}
+
+nav 
+{
+    display: flex;
+    padding-top: 20px;
+    padding-right: 50px;
+    padding-left: 40px;
+    justify-content: space-between;
+}
+
+
+header
+{
+    padding-left: 47px;
+    padding-top: 20px;
+}
+
+h1
+{
+    font-size: 24px;
+}
+
+.nature
+{
+    font-size: 16px;
+}
+
+
+/*****************************************  BOUTON RECHERCHE ET FILTRES*****************************/
+
+.fa-location-dot
+{
+    background-color : #F2F2F2;
+    padding: 13px 14px 13px 18px;
+    border-top-left-radius: 18px;
+    border-bottom-left-radius: 16px;
+    height: 50px;
+    width: 46px;
+    margin: -5px;
+    margin-top: 5px;
+    padding-top: 16px;
+
+}
+
+.recherche
+{
+    color: white;
+    font-weight: bold;
+    border-top-right-radius: 18px;
+    border-bottom-right-radius: 18px;
+    background-color: #0065fc;
+    border: none;
+    cursor: pointer;
+    height: 50px;
+    width: 125px;
+    margin: -10px;
+}
+
+.marseille_france
+{
+    font-weight: bold;
+    border: none;
+    color: black;
+    border: 1px solid #F2F2F2;
+    height: 50px;
+    width: 235px;
+    padding-left: 10px;
+    font-size: 100%;
+}
+
+.icone_loupe
+{
+    display: none;
+}
+
+.icone_loupe
+{
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+.filtres
+{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-left: 56px;
+}
+
+.filtres a
+{
+   border-radius: 60px;
+   padding-right: 20px;
+   margin-left: 30px;
+   margin-right: 20px;
+   border: solid 3px #F2F2F2;
+   text-decoration: none;
+   color: black;
+}
+
+.filtres a:hover,
+.filtres a:focus
+{
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    opacity: 0.8;
+    -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
+    -moz-transition: -moz-transform 0.2s, opacity 0.2s;
+    transition: transform 0.2s, opacity 0.2s;
+    background-color: #88c2dd;
+}
+
+.filtres + p
+{
+    margin-top: 50px;
+    margin-left: 52px;
+}
+
+.fa-money-bill-wave, .fa-child-reaching, .fa-heart, .fa-dog
+{
+    color: #0065fc;
+    background-color: #DEEBFF;
+    padding: 18px 16px 18px 16px;
+    border-radius: 100%;
+}
+
+.fa-info
+{
+    color:#0065fc;
+    border-radius:100%;
+    width:20px;
+    height: 20px;
+    border: 2px solid #F2F2F2;
+    margin-right: 10px;
+    text-align: center;
+    justify-content: center;
+    font-size: smaller;
+}
+
+form
+{
+    display: flex;
+}
+
+p, form
+{
+    margin-bottom: 31px;
+    text-decoration: none;
+}
+
+header p
+{
+    font-size: 12px;
+}
+
+h2
+{
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/******************************  HEBERGEMENTS  ***************************************/
+
+.Hebergements
+{
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    height: 690px;
+    flex-direction: row;
+    flex-basis: 66%;
+}
+
+#Images_Haut
+{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 42px;
+}
+
+#Images_Bas
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+.Hebergements img
+{
+    object-fit: cover;
+    width: 100%;
+    height: 120px;
+    border-radius: 20px 20px 0 0;
+    padding-right: 10px;
+    margin: 5px 0 0 5px;
+}
+
+.Hebergements .bord_blanc_photo
+{
+    width: 256px;
+    height: auto;
+    background: white;
+    margin-bottom: 40px;
+    border-radius: 20px;
+    box-shadow: 8px 8px 8px rgba(0,0,0,0.16);
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+.Hebergements .bord_blanc_photo:hover
+{
+    transform: scale(1.01);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+}
+
+.description
+{
+    margin-left: 15px;
+    line-height: 1px;
+    margin-top: 10px;
+}
+
+.Hebergements .etoiles_hotel
+{
+    font-size: 90%;
+}
+
+.blue_star
+{
+    color: #0065fc;
+}
+
+.grey_star
+{
+    color: lightgray;
+}
+
+.AffiPlus a
+{
+    margin-left: 42px;
+    font-size: 18px;
+    font-weight: bolder;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.titre_hbg 
+{
+    margin-left: 25px;
+}
+
+/*********************************POPULAIRES******************************/
+
+.Populaires
+{
+    background: #F2F2F2;
+    flex-basis: 33%;
+    height: 690px;
+    border-radius: 20px;
+    margin-left: 25px;
+}
+
+
+.Populaires .popu_titre
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0;
+    text-decoration: none;
+}
+
+a .popu_titre
+{
+    color: black;
+}
+
+
+.Populaires .bord_blanc_popus_organisation
+{
+    display: flex;
+    background-color: white;
+    border-radius: 20px;
+    height: 145px;
+    width: 483px;
+    margin-bottom: 30px;
+    margin-left: 60px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.16);
+    cursor: pointer;
+}
+
+.Populaires img
+{
+    object-fit: cover;
+    height: 141px;
+    width: 140px;
+    border-radius: 20px 0 0 20px;
+    padding: 1%;
+}
+
+.Populaires .description_popu
+{
+    line-height: 18px;
+    margin-left: 10px;
+}
+
+.Populaires .bord_blanc_popus_organisation:hover
+{
+    transform: scale(1.01);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+}
+
+.Populaires .etoiles_hotel
+{
+    margin-top: 0px;
+}
+
+.nuit
+{
+    margin-top: -18px;
+}
+/*********************************ACTIVITES****************************/
+
+
+.Les_Activites
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-between;
+    height: 496px;
+    margin-top: 50px;
+    margin-left: 3px;
+    margin-bottom: 120px;
+}
+
+    .border-activity
+{
+    border-radius: 20px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.062);
+    transition: 0.8s;
+    width: 275px;
+    background-color: white;
+}
+
+
+.acty_1
+{
+    width: 300px;
+    height: 440px;
+    border-radius: 20px;
+}
+
+.acty_2
+{
+    width: 300px;
+    height: 200px;
+    border-radius: 20px;
+}
+
+.acty_3
+{
+    width: 300px;
+    height: 110px;
+    border-radius: 20px;
+}
+
+.acty_4
+{
+    width: 300px;
+    height: 440px;
+    border-radius: 20px;
+}
+
+.acty_5
+{
+    width: 300px;
+    height: 140px;
+    border-radius: 20px;
+}
+
+.acty_6
+{
+    width: 300px;
+    height: 180px;
+    border-radius: 20px;
+}
+
+
+.TitreActivite
+{
+    color: black;
+    font-size: 20px;
+    padding-top: 50px;
+    margin-left: 50px;
+}
+
+.Name_Activity
+{
+    font-weight: 800;
+    text-align: center;
+    line-height: 18px;
+}
+
+
+.Activity_Marseille img 
+{
+    object-fit: cover;
+    width: 275px;
+    border-radius: 15px 15px 0 0;
+    
+    object-fit: cover;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    
+    background-color: white;
+}
+
+.border-activity:hover
+{
+    transform: scale(1.01);
+    background-position: -3px;
+}
+
+
+/*********************************FOOTER***************************/
+
+
+footer
+{
+    background: #f2f2f2;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 400px;
+    height: 180px;
+    font-size: medium;
+}
+
+footer section 
+{
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    padding-top: 20px;
+}
+
+footer a 
+{
+    text-decoration: none;
+    padding-bottom: 10px;
+    color: black;
+}
+

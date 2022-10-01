@@ -1,0 +1,360 @@
+/***************TABLETTE ET ORDINATEUR****************/
+
+@media screen and (max-width: 992px) {
+    
+   
+    
+    main
+    {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    /*******NAV, LOGO, RECHERCHE****/
+    
+        #logo 
+        {
+            padding-left: 40px;
+            margin-bottom: 18px;
+            display: block;
+            margin-top: -46px;
+        }
+    
+        nav 
+        {
+            display: flex;
+            padding-top: 20px;
+            padding-right: 49px;
+            padding-left: 0px;
+            justify-content: space-between;
+        }
+    
+        nav div a:hover
+        {
+            color: #0065fc;
+            border-top: 4px solid #0065fc;
+            border-bottom: none;
+        }
+
+        
+        nav div a
+        {
+            display: inline;
+        }
+
+        header
+        {
+            padding-left: 52px;
+            padding-top: 20px;
+        }
+
+        header p
+        {
+            font-size: 19px;
+            margin-top: -10px;
+        }
+
+        header h1
+        {
+            font-size: 24px; 
+            margin-left: 17px;
+        }
+
+        form 
+        {
+            margin-left: 20px;
+        }
+
+        .nature
+        {
+            margin-left: 17px;
+        }
+
+    /*****BOUTON RECHERCHE****/
+
+        .recherche
+        {
+            background-color: #0065FC;
+            color: white;
+            width: 130px;
+            border: none;
+            border-radius: 0px 17px 17px 0px;
+            font-weight: bold;
+            font-size: 17px;
+            margin-left: -5px;
+        }
+
+
+        .fa-location-dot
+        {
+            height: 50px;
+            padding-top: 18px;
+            margin-right: -4px;
+        }
+
+        .marseille_france
+        {
+            font-size: 110%;
+        }
+
+        .search-box input
+        {
+            height: 50px;
+        }
+
+    /*****FILTRES****/
+    
+    .filtres a 
+    {
+        display: inline-block;
+        margin-top: 20px;
+        margin-right: 1px;
+    }
+
+    .filtres
+    {
+        margin-left: 30px;
+        margin-top: 12px;
+    }
+    
+    .titre_filtres
+    {
+        margin-left: 38px;
+    }
+
+
+    .filtres+p 
+    {
+        margin-top: 56px;
+        margin-left: 74px;
+    }
+
+/***HEBERGEMENTS******/
+    
+
+    .Hebergements h4, p
+    {
+        font-size: 18px;
+    }
+
+    .Hebergements
+    {
+        background-color: white;
+        margin-top: 30px;
+        margin-left: 0px;
+        width: 98%;
+    }
+
+    .Hebergements .bord_blanc_photo
+    {
+        width: 100%;
+        height: 300px;
+    }
+
+    .Hebergements img
+    {
+        object-fit: cover;
+        width: 100%;
+        height: 180px;
+    }    
+
+    #Images_Haut, #Images_Bas
+    {
+        flex-direction: column;
+        height: 100%;
+    }
+
+
+
+    .AffiPlus
+    {
+        font-size: 17px;
+        margin-top: 0;
+        margin-left: -35px;
+    }
+
+
+    .description
+    {
+        line-height: 0px;
+        margin-left: 26px;
+    }
+
+    /****POPULAIRES********/
+    
+    
+    .Populaires
+    {
+        margin-left: 6px;
+        width: 98%;
+        padding-bottom: 30px;
+    }
+
+    .Populaires .popu_titre
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+
+
+    .Populaires .bord_blanc_popus_organisation
+    {
+        width: 85%;
+    }
+    
+
+    .Populaires img
+    {
+        object-fit: cover;
+        width: 140px;
+        height: 140px;
+    }
+
+
+    .Populaires .description_popu
+    {
+        margin-left: 6px;
+        margin-bottom: 15px;
+        margin-top: -12px;
+        line-height: 18px;
+        justify-content: space-between;
+    }
+
+    .Populaires h4
+    {
+        font-size: 18px;
+    }
+
+    .Populaires p
+    {
+        font-size: 17px;
+        margin-top: -16px;
+    }
+
+    .Populaires .etoiles_hotel
+    {
+        font-size: 15px;
+        margin-top: 35px;
+        margin-bottom: 12px;
+    }
+
+    .popu_titre 
+    {
+        margin-top: 10px;
+    }
+   
+/****ACTIVITES*****/
+
+
+    .Les_Activites 
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+        margin-bottom: 100px; 
+        margin-top: 15px;
+    }
+
+    .Les_Activites img
+    {
+        height: 260px;
+        width: 838px;
+        object-fit: cover;
+        border-radius: 20px 20px 0 0;
+    }
+
+
+    .TitreActivite
+    {
+        margin-right: 15px;
+        margin-left: 81px;
+        padding-top: 40px;
+    }
+
+    .Les_Activites p
+    {
+        text-align: center;
+    }
+
+
+    .border-activity
+    {
+        border-radius: 20px;
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.062);
+        transition: 0.8s;
+        height: 316px;
+        width: 841px;
+        margin: 35px;
+    }
+
+
+/****FOOTER*****/
+
+    footer
+    {
+        background: #f2f2f2;
+        display: flex;
+        justify-content: space-between;
+        padding-right:50px;
+        height: 194px;
+        font-size: medium;
+    }
+
+    footer section 
+    {
+        display: flex;
+        flex-direction: column;
+        padding-left: 30px;
+        padding-top: 20px;
+    }
+
+    footer a 
+    {
+        text-decoration: none;
+        padding-bottom: 10px;
+        color: black;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
