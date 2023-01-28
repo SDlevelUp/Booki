@@ -1,6 +1,5 @@
-*{
+*, ::after, ::before{
     box-sizing: border-box;
-    font-family: raleway, Verdana, Geneva, Tahoma, sans-serif;
 }
 
 main, header{
