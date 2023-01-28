@@ -157,6 +157,7 @@ h1
 {
     margin-top: 50px;
     margin-left: 52px;
+    display: flex;
 }
 
 .fa-money-bill-wave, .fa-child-reaching, .fa-heart, .fa-dog
@@ -169,15 +170,16 @@ h1
 
 .fa-info
 {
-    color:#0065fc;
-    border-radius:100%;
-    width:20px;
+   color: #0065fc;
+    border-radius: 100%;
+    width: 20px;
     height: 20px;
     border: 2px solid #F2F2F2;
     margin-right: 10px;
-    text-align: center;
     justify-content: center;
-    font-size: smaller;
+    font-size: x-small;
+    align-items: center;
+    display: flex;
 }
 
 form
