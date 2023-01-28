@@ -49,8 +49,9 @@ nav
 
 header
 {
-    padding-left: 47px;
-    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
 }
 
 h1
