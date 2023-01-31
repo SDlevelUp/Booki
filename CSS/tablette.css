@@ -1,360 +1,254 @@
-/***************TABLETTE ET ORDINATEUR****************/
+/***************MOBILE****************/
 
-@media screen and (max-width: 992px) {
-    
-   
-    
-    main
-    {
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    /*HEADER*/
+
+    header {
         display: flex;
-        flex-direction: column-reverse;
-    }
-
-    /*******NAV, LOGO, RECHERCHE****/
-    
-        #logo 
-        {
-            padding-left: 40px;
-            margin-bottom: 18px;
-            display: block;
-            margin-top: -46px;
-        }
-    
-        nav 
-        {
-            display: flex;
-            padding-top: 20px;
-            padding-right: 49px;
-            padding-left: 0px;
-            justify-content: space-between;
-        }
-    
-        nav div a:hover
-        {
-            color: #0065fc;
-            border-top: 4px solid #0065fc;
-            border-bottom: none;
-        }
-
-        
-        nav div a
-        {
-            display: inline;
-        }
-
-        header
-        {
-            padding-left: 52px;
-            padding-top: 20px;
-        }
-
-        header p
-        {
-            font-size: 19px;
-            margin-top: -10px;
-        }
-
-        header h1
-        {
-            font-size: 24px; 
-            margin-left: 17px;
-        }
-
-        form 
-        {
-            margin-left: 20px;
-        }
-
-        .nature
-        {
-            margin-left: 17px;
-        }
-
-    /*****BOUTON RECHERCHE****/
-
-        .recherche
-        {
-            background-color: #0065FC;
-            color: white;
-            width: 130px;
-            border: none;
-            border-radius: 0px 17px 17px 0px;
-            font-weight: bold;
-            font-size: 17px;
-            margin-left: -5px;
-        }
-
-
-        .fa-location-dot
-        {
-            height: 50px;
-            padding-top: 18px;
-            margin-right: -4px;
-        }
-
-        .marseille_france
-        {
-            font-size: 110%;
-        }
-
-        .search-box input
-        {
-            height: 50px;
-        }
-
-    /*****FILTRES****/
-    
-    .filtres a 
-    {
-        display: inline-block;
-        margin-top: 20px;
-        margin-right: 1px;
-    }
-
-    .filtres
-    {
-        margin-left: 30px;
-        margin-top: 12px;
-    }
-    
-    .titre_filtres
-    {
-        margin-left: 38px;
-    }
-
-
-    .filtres+p 
-    {
-        margin-top: 56px;
-        margin-left: 74px;
-    }
-
-/***HEBERGEMENTS******/
-    
-
-    .Hebergements h4, p
-    {
-        font-size: 18px;
-    }
-
-    .Hebergements
-    {
-        background-color: white;
-        margin-top: 30px;
-        margin-left: 0px;
-        width: 98%;
-    }
-
-    .Hebergements .bord_blanc_photo
-    {
-        width: 100%;
-        height: 300px;
-    }
-
-    .Hebergements img
-    {
-        object-fit: cover;
-        width: 100%;
-        height: 180px;
-    }    
-
-    #Images_Haut, #Images_Bas
-    {
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 20px;
+    }
+
+    header>#logo {
+        width: 150px;
+    }
+
+    .navigation_site {
+        display: flex;
+        justify-content: center;
+        width: 100%;
         height: 100%;
     }
 
+    .navigation_site>a {
+        text-decoration: none;
+        color: black;
+        border-top: 0px solid transparent;
+        border-bottom: 3px solid #F2F2F2;
+        width: 50%;
+        text-align: center;
+        padding: 35px;
+    }
 
+    .navigation_site>a:hover {
+        color: #0065FC;
+        border-top: none;
+        border-bottom: 2px solid #0065FC;
+        cursor: pointer;
+    }
 
-    .AffiPlus
-    {
-        font-size: 17px;
-        margin-top: 0;
-        margin-left: -35px;
+    main {
+        margin-left: 0;
+    }
+
+    main>.hook_site>h2 {
+        font-size: 22px;
     }
 
 
-    .description
-    {
-        line-height: 0px;
-        margin-left: 26px;
+    /*SEARCH BAR */
+
+    .search_location {
+        height: 50px;
+        width: 40%;
+        border: 1px solid #f2f2f2;
+        font-size: 19px;
+        font-weight: bold;
     }
 
-    /****POPULAIRES********/
-    
-    
-    .Populaires
-    {
-        margin-left: 6px;
-        width: 98%;
-        padding-bottom: 30px;
+    .search_button {
+        height: 50px;
+        width: 130px;
+        border-radius: 0 10px 10px 0;
     }
 
-    .Populaires .popu_titre
-    {
+
+    /*FILTERS, PARAGRAPH*/
+
+    .global_filters {
         display: flex;
+        flex-direction: column;
+        align-items: flex-start;
         justify-content: space-between;
+        margin-bottom: 5px;
+        padding: 15px;
+    }
+
+    .filter_choice>h3 {
+        font-size: 16px;
+        padding-top: 9px;
+    }
+
+    .filter_choice {
+        margin: 0px 7px 20px 15px;
+    }
+
+    .global_filters>.filters_choice {
+        display: flex;
+        flex-wrap: wrap;
+        height: 110px;
+        margin-left: 0;
+    }
+
+    .housing_information_paragraph>i {
+        border-radius: 100%;
+        font-weight: bold;
+        justify-items: center;
         align-items: center;
-        
-        margin-right: 50px;
-        margin-left: 50px;
+        width: 45px;
+        height: 45px;
+        border: 1px solid #d9d9d9;
+        display: flex;
     }
 
-
-    .Populaires .bord_blanc_popus_organisation
-    {
-        width: 85%;
-    }
-    
-
-    .Populaires img
-    {
-        object-fit: cover;
-        width: 140px;
-        height: 140px;
-    }
-
-
-    .Populaires .description_popu
-    {
-        margin-left: 6px;
-        margin-bottom: 15px;
-        margin-top: -12px;
-        line-height: 18px;
-        justify-content: space-between;
-    }
-
-    .Populaires h4
-    {
+    .housing_information_paragraph {
         font-size: 18px;
     }
 
-    .Populaires p
-    {
-        font-size: 17px;
-        margin-top: -16px;
+
+    /*ACCOMODATIONS*/
+
+    .accomodations_displaying_results>h1,
+    .populars_title>h2,
+    .populars_title>i,
+    .activities_block>h1 {
+        margin-bottom: 30px;
     }
 
-    .Populaires .etoiles_hotel
-    {
-        font-size: 15px;
-        margin-top: 35px;
-        margin-bottom: 12px;
+    .accomodations_block {
+        display: flex;
+        flex-direction: column-reverse;
+        height: 100%;
+        padding: 0;
+        margin: 0;
     }
 
-    .popu_titre 
-    {
+    .accomodation_part_one,
+    .accomodation_part_two {
+        width: 100%;
+    }
+
+    .accomodation_img {
+        width: 100%;
+        height: 165px;
+    }
+
+    .accomodations_card {
+        width: 100%;
+        margin-bottom: 20px;
+        max-height: 275px;
+    }
+
+    .accomodations_description {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        font-size: 18px;
+    }
+
+    .accomodations_description>h3,
+    .accomodations_description>p,
+    .accomodations_description>div {
+        font-size: 18px;
+    }
+
+
+    /*POPULARS*/
+
+    .populars {
+        width: 100%;
+        border-radius: 0;
+        margin-left: 0;
+        background-color: #F2F2F2;
+        height: 100%;
+        padding: 15px;
+    }
+
+    .displaying_populars_result {
+        width: 100%;
+        border-radius: 0;
+        margin-right: 0;
+        padding: 15px;
+        max-height: 100%;
+        background-color: white;
+    }
+
+    .populars_title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 94%;
+        margin-bottom: 30px;
+        font-size: 18px;
+    }
+
+    .populars_title>h1 {
+        margin: 0;
+    }
+
+    .populars_title>i {
+        margin: 0;
+    }
+
+    .populars_image {
+        width: 100%;
+    }
+
+    .popular_img {
+        width: 100%;
+        height: 180px;
+    }
+
+    .populars_description {
+        width: 95%;
+        display: flex;
+        overflow: auto;
+        margin: 0;
+        font-size: 18px;
+    }
+
+    .populars_description>.populars_description_title>h3 {
+        margin-bottom: 8px;
+        font-size: 18px;
+    }
+
+    /*ACTIVITIES*/
+
+
+    .activities_block {
+        margin-top: 0px;
+        padding: 15px;
+        width: 100%;
+    }
+
+    .activities_displaying {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+    /*FOOTER*/
+
+    footer {
+        left: 0px;
+        padding-left: 3%;
+        padding-top: 3%;
         margin-top: 10px;
     }
-   
-/****ACTIVITES*****/
 
-
-    .Les_Activites 
-    {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 100%;
-        height: auto;
-        margin-left: 0;
-        margin-bottom: 100px; 
-        margin-top: 15px;
+    .footer_section {
+        width: 50%;
+        padding-left: 2%;
     }
-
-    .Les_Activites img
-    {
-        height: 260px;
-        width: 838px;
-        object-fit: cover;
-        border-radius: 20px 20px 0 0;
-    }
-
-
-    .TitreActivite
-    {
-        margin-right: 15px;
-        margin-left: 81px;
-        padding-top: 40px;
-    }
-
-    .Les_Activites p
-    {
-        text-align: center;
-    }
-
-
-    .border-activity
-    {
-        border-radius: 20px;
-        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.062);
-        transition: 0.8s;
-        height: 316px;
-        width: 841px;
-        margin: 35px;
-    }
-
-
-/****FOOTER*****/
-
-    footer
-    {
-        background: #f2f2f2;
-        display: flex;
-        justify-content: space-between;
-        padding-right:50px;
-        height: 194px;
-        font-size: medium;
-    }
-
-    footer section 
-    {
-        display: flex;
-        flex-direction: column;
-        padding-left: 30px;
-        padding-top: 20px;
-    }
-
-    footer a 
-    {
-        text-decoration: none;
-        padding-bottom: 10px;
-        color: black;
-    }
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

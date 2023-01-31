@@ -1,0 +1,529 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway';
+    margin: 0;
+    padding-left: 0;
+    margin-bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.grey {
+    color: #d9d9d9;
+}
+
+/***************************************** LOGO, LINKS, NAVIGATION*****************************/
+
+header>#logo {
+    width: 100px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.navigation_site>a {
+    text-decoration: none;
+    color: black;
+    padding: 18px 30px 30px 20px;
+}
+
+.navigation_site>a:hover {
+    color: #0065FC;
+    border-top: 2px solid #0065FC;
+}
+
+/*BUTTON*/
+
+.hook_site {
+    padding: 20px;
+    margin: 0px;
+}
+
+.hook_site>p {
+    margin-top: -15px;
+}
+
+.search_total_bar {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+#search_icon {
+    height: 50px;
+    width: 50px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F2F2F2;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+#search_magnifying_glass {
+    display: none;
+}
+
+.search_location {
+    height: 50px;
+    width: 15%;
+    border: 1px solid #f2f2f2;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.search_button {
+    height: 50px;
+    width: 130px;
+    color: #FFF;
+    background-color: #0065FC;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: transparent;
+    font-size: 19px;
+}
+
+.search_button:hover {
+    cursor: pointer;
+}
+
+/*FILTERS BLOC*/
+
+.global_filters {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+
+.global_filters>.filters_choice {
+    display: flex;
+}
+
+.global_filters>h2 {
+    font-size: 18px;
+}
+
+.filter_choice {
+    border: 2px solid #d9d9d9;
+    margin-left: 35px;
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+    border-radius: 50px;
+    height: 50px
+}
+
+.filter_choice:hover {
+    background-color: rgba(0, 101, 252, .2);
+    cursor: pointer;
+}
+
+.filter_choice>h3 {
+    height: 30px;
+    padding-top: 2px;
+}
+
+.filter_choice>i {
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    left: -10px;
+    background-color: #deebff;
+}
+
+.blue {
+    color: #0065fc;
+}
+
+.housing_information_paragraph {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.housing_paragraph {
+    padding-left: 10px;
+}
+
+.housing_information_paragraph>i {
+    border-radius: 100%;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #d9d9d9;
+}
+
+.fa-info {
+    color: #0065fc;
+}
+
+/*ACCOMODATIONS BLOC*/
+
+.accomodations_block {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+}
+
+.accomodations_displaying_results {
+    width: 70%;
+    border-radius: 20px;
+    margin-right: 15px;
+    padding: 40px;
+    background-color: #F2F2F2;
+    max-height: 100%;
+}
+
+.accomodations_displaying_results>h1,
+.activities_block {
+    margin-bottom: 50px;
+}
+
+.accomodations_cards {
+    display: flex;
+    flex-direction: column;
+}
+
+.accomodation_part_one,
+.accomodation_part_two {
+    display: flex;
+    justify-content: space-between;
+}
+
+.accomodations_card {
+    width: 30%;
+    max-height: 300px;
+    text-decoration: none;
+    color: black;
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    margin-bottom: 40px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border: 4.5px solid white;
+}
+
+.accomodations_card>div {
+    margin: 0;
+}
+
+.accomodations_card:hover {
+    transform: scale(1.01);
+}
+
+.accomodations_image {
+    height: 70%;
+}
+
+.accomodation_img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+.accomodations_description {
+    position: relative;
+    background-color: white;
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-bottom: 15px;
+    font-size: 16px;
+}
+
+.accomodations_description>h3,
+.accomodations_description>p,
+.accomodations_description>ul {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.accomodations_stars {
+    padding: 0;
+    margin-top: 13px;
+}
+
+.more>a {
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+}
+
+/*POPULARS BLOC*/
+
+.populars {
+    width: 30%;
+    border-radius: 20px;
+    margin-left: 15px;
+    padding: 40px;
+    background-color: #F2F2F2;
+    max-height: 100%;
+}
+
+.populars_title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.populars_title>i {
+    font-size: 18px;
+}
+
+.displaying_populars_results {
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.populars_cards {
+    display: flex;
+    background-color: white;
+    border: 4px solid white;
+    border-radius: 20px;
+    text-decoration: none;
+    color: black;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.populars_cards>div {
+    margin: 0;
+    border-radius: 20px 0 0 20px;
+}
+
+.populars_image {
+    width: 40%;
+}
+
+.popular_img {
+    position: relative;
+    top: 2px;
+    width: 100%;
+    height: 150px;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.populars_description {
+    background-color: white;
+    border-radius: 0 20px 20px 0;
+    padding-left: 20px;
+    font-size: 16px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.populars_description>.populars_description_title>h3 {
+    margin-bottom: 3px;
+}
+
+.populars_price {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.populars_stars {
+    padding: 0;
+    position: relative;
+    bottom: 0px;
+}
+
+.populars_stars>i {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.populars_cards:hover {
+    transform: scale(1.01);
+}
+
+
+/*ACTIVITIES BLOC*/
+
+.activities_block {
+    margin-top: 70px;
+    width: 100%;
+    padding: 40px;
+}
+
+.activities_block>h1 {
+    padding: 20px;
+}
+
+.activities_displaying {
+    display: flex;
+    max-height: 100%;
+    padding-right: 10px;
+    margin-left: 0;
+    width: 100%;
+}
+
+.activity_card {
+    display: flex;
+    border-radius: 20px;
+    flex-direction: column;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    text-decoration: none;
+    color: black;
+    width: 329px;
+    height: 515spx;
+}
+
+.activity_card_image {
+    margin: 0;
+}
+
+.activity_image {
+    position: relative;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.activity_pomegues,
+.activity_longchamp {
+    height: 270px;
+}
+
+.activity_frioul,
+.activity_garde {
+    height: 220px;
+}
+
+.activity_longchamp,
+.activity_frioul {
+    position: relative;
+    top: 11.5%;
+}
+
+.activity_frioul>a>div>img,
+.activity_garde>a>div>img {
+    height: 150px;
+    max-height: 100%;
+    width: 100%;
+}
+
+.activity_pomegues>a>div>img,
+.activity_longchamp>a>div>img {
+    height: 200px;
+    max-height: 100%;
+    width: 100%;
+}
+
+.activite_titre {
+    margin: 20px;
+}
+
+.activity_port,
+.activity_pomegues,
+.activity_frioul,
+.activity_calanques,
+.activity_garde,
+.activity_longchamp {
+    align-items: center;
+    text-align: center;
+    border-radius: 30px;
+}
+
+.activity_port>a>div>img,
+.activity_calanques>a>div>img {
+    height: 480px;
+    max-height: 100%;
+    width: 100%;
+}
+
+.activity_port,
+.activity_calanques {
+    height: 560px;
+}
+
+.activity_port,
+.activity_calanques,
+.activities_pomegues_frioul,
+.activite_garde_longchamp {
+    padding: 20px;
+    width: 100%;
+}
+
+.activities_port_pomegues_frioul,
+.activities_calanques_garde_longchamp {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+
+.activity_card:hover {
+    transform: scale(1.01);
+}
+
+/*FOOTER BLOC*/
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    background-color: #F2F2F2;
+    margin-top: 70px;
+    position: relative;
+    width: 100%;
+    padding-left: 40px;
+    padding-bottom: 1.5%;
+
+}
+
+.footer_section {
+    width: 33%;
+    align-items: center;
+}
+
+.footer_section>ul {
+    list-style: none;
+    padding-left: 0;
+    align-items: center;
+}
+
+.footer_section>ul>li a {
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: black;
+    line-height: 25px;
+}
+
+.footer_section>h3 {
+    font-weight: bold;
+}
