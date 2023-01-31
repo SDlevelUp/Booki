@@ -71,14 +71,6 @@ Sarah, CTO @Booki
 
 Commentaires évaluateur : 
 
-Compétences évaluées
-
-En vous basant sur les critères d’évaluation du projet, définissez le statut d’acquisition de chaque compétence et commentez à l'aide de ces instructions :
-
-Validé - Commentez si besoin
-
-Non validé - Listez les critères non remplis
-
 1. Implémenter une interface responsive
 
 Validé
